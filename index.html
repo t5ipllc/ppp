@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -46,71 +46,20 @@
 					<div class="outer-container clearfix">
 						<!-- Logo Box -->
 						<div class="pull-left logo-box">
-							<div class="logo"><a href="index.html"><img src="images/logo.png"
-										alt="Private Placement Pros logo"
-										title="Link to Private Placement Pros home page." style="height: 100px;"></a>
+							<div class="logo">
+								<a href="/index.html">
+									<img src="/images/logo.png" alt="Private Placement Pros logo"
+										title="Link to Private Placement Pros home page." style="height: 100px;">
+								</a>
 							</div>
 						</div>
 						<!-- Nav Outer -->
-						<div class="nav-outer clearfix">
-							<!-- Main Menu -->
-							<nav class="main-menu navbar-expand-md">
-								<div class="navbar-header">
-									<button class="navbar-toggler" type="button" data-toggle="collapse"
-										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-										aria-expanded="false" aria-label="Toggle navigation">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-
-								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li class="current"><a href="index.html">HOME</a>
-
-										</li>
-
-
-										<li><a href="ppp.html#">PPP</a>
-											<ul>
-												<li><a href="#">History</a></li>
-												<li><a href="#">Occurrence</a></li>
-												<li><a href="#">What is PPP?</a></li>
-												<li><a href="#">Process?</a></li>
-											</ul>
-										</li>
-										<li><a href="#">MTN</a>
-											<ul>
-												<li><a href="#">MTN</a></li>
-												<li><a href="#">High Efficient Market</a></li>
-												<li><a href="#">Which Notes are Used??</a></li>
-												<li><a href="#">Arbitrage & Leverage</a></li>
-												<li><a href="#">Explanation of the Leverage Effect</a>
-												</li>
-											</ul>
-										</li>
-										<li><a href="#">TRADE</a>
-											<ul>
-												<li><a href="#">Trade</a></li>
-												<li><a href="#">How does the Investor Make Profits?</a>
-												</li>
-												<li><a href="#">Claim</a></li>
-												<li><a href="#">Risk</a></li>
-												<li><a href="#">Controls</a></li>
-												<li><a href="#">Profitability</a></li>
-
-											</ul>
-										</li>
-										<li><a href="#">PROCESS</a></li>
-										<li><a href="#">CONTACT</a></li>
-									</ul>
-								</div>
-
-							</nav>
-
-						</div>
-
+						<div id="topnav" class="nav-outer clearfix"></div>
+						<script src="/js/components/topNavIndex.js"></script>
+						<script>
+							var topnav = document.getElementById("topnav");
+							topnav.innerHTML = insertTopNavIndex();
+						</script>
 					</div>
 				</div>
 			</div>
@@ -125,61 +74,12 @@
 					</div>
 
 					<!--Right Col-->
-					<div class="right-col pull-right">
-						<!-- Main Menu -->
-						<nav class="main-menu navbar-expand-md">
-							<button class="navbar-toggler" type="button" data-toggle="collapse"
-								data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-								aria-expanded="false" aria-label="Toggle navigation">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-
-							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
-								<ul class="navigation clearfix">
-									<li class="current"><a href="index.html">HOME</a>
-
-									</li>
-
-
-									<li><a href="#">PPP</a>
-										<ul>
-											<li><a href="#">History</a></li>
-											<li><a href="#">Occurrence</a></li>
-											<li><a href="#">What is PPP?</a></li>
-											<li><a href="#">Process?</a></li>
-										</ul>
-									</li>
-									<li><a href="#">MTN</a>
-										<ul>
-											<li><a href="#">MTN</a></li>
-											<li><a href="#">High Efficient Market</a></li>
-											<li><a href="#">Which Notes are Used??</a></li>
-											<li><a href="#">Arbitrage & Leverage</a></li>
-											<li><a href="#">Explanation of the Leverage Effect</a></li>
-										</ul>
-									</li>
-									<li><a href="#">TRADE</a>
-										<ul>
-											<li><a href="#">Trade</a></li>
-											<li><a href="#">How does the Investor Make Profits?</a>
-											</li>
-											<li><a href="#">Claim</a></li>
-											<li><a href="#">Risk</a></li>
-											<li><a href="#">Controls</a></li>
-											<li><a href="#">Profitability</a></li>
-
-										</ul>
-									</li>
-									<li><a href="#">PROCESS</a></li>
-									<li><a href="#">CONTACT</a></li>
-								</ul>
-
-							</div>
-						</nav><!-- Main Menu End-->
-					</div>
-
+					<div id="scrollnav" class="right-col pull-right"></div>
+					<script src="/js/components/scrollNav.js"></script>
+					<script>
+						var scrollnav = document.getElementById("scrollnav");
+						scrollnav.innerHTML = insertScrollNav();
+					</script>
 				</div>
 			</div>
 			<!--End Sticky Header-->
@@ -199,7 +99,7 @@
 								Program?</h1>
 							<div class="text alternate">The history of PPPs &hellip;<br>What are PPPs?</div>
 							<div class="btn-box">
-								<a href="ppp.html" class="theme-btn btn-style-nine"
+								<a href="/pages/ppp.html" class="theme-btn btn-style-nine"
 									title="Private Placement Program description & Private Placement Program History">Learn
 									More
 									<span class="icon flaticon-direction"></span></a>
@@ -316,7 +216,7 @@
 												has been a multi-trillion dollar industry.
 											</div>
 											<div class="btn-box">
-												<a href="ppp.html" class="theme-btn btn-style-nine">Learn
+												<a href="/pages/ppp.html" class="theme-btn btn-style-nine">Learn
 													More&hellip;<span class="icon flaticon-direction"></span></a>
 											</div>
 											<!--<div class="arrow-box fa fa-angle-right"></div>-->
@@ -465,93 +365,13 @@
 
 
 		<!--Main Footer-->
-		<footer class="main-footer style-two" style="margin-top: 96px;">
-			<div class="auto-container">
-				<!--Widgets Section-->
-				<div class="widgets-section">
-					<div class="row clearfix">
-
-						<!--Column-->
-						<div class="big-column col-lg-6 col-md-12 col-sm-12">
-							<div class="row clearfix">
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-7 col-md-6 col-sm-12">
-									<div class="footer-widget logo-widget">
-										<div class="logo">
-											<a href="index.html"><img src="images/logo.png" alt="" /></a>
-										</div>
-										<div class="text"></div>
-										<ul class="list-style-two">
-											<li><span class="icon fa fa-phone"></span> <a
-													href="tel:+0208 106 1793">+0208 106 1793 (London)</a></li>
-											<li><span class="icon fa fa-phone"></span> <a href="tel:+1 865 253 2764">+1
-													865 253 2764 (US)</a></li>
-											<li><span class="icon fa fa-envelope"></span><a
-													href="mailto:mike@privateplacementpros.uk">mike@privateplacementpros.uk</a>
-											</li>
-											<li><span class="icon fa fa-home"></span>Michael J Miller LTD, 71-75 Covent
-												Garden, London, WC 2H9JQ</li>
-											<li><span class="icon fa fa-home"></span>Companies House Registration
-												14297215</li>
-										</ul>
-									</div>
-								</div>
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-5 col-md-6 col-sm-12">
-									<div class="footer-widget links-widget">
-										<h4>Links</h4>
-										<ul class="list-link">
-											<li><a href="index.html">Home</a></li>
-											<li><a href="ppp.html">Private Placement Program</a></li>
-											<li><a href="mtn.html">Medium Term Notes</a></li>
-											<li><a href="#">Trade</a></li>
-											<li><a href="#">Process</a></li>
-											<li><a href="#">Contact</a></li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<!--Column-->
-						<div class="big-column col-lg-6 col-md-12 col-sm-12">
-							<div class="row clearfix">
-
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<!-- <div class="footer-widget gallery-widget">
-									<h4>Location</h4>
-									<div class="widget-content">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.1465471119!2d26.303087315507174!3d38.3224370882335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb7a34c24694e3%3A0x2f9e980fbb7f88e3!2zTXVzYWxsYSwgMTAwMi4gU2suIE5vOjE3LCAzNTkzMCDDh2XFn21lL8Swem1pcg!5e0!3m2!1str!2str!4v1578999233477!5m2!1str!2str" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-									</div>
-									<p align="right">2019 &copy; All rights reserved by <a href="http://www.3gengrafik.com">3gengrafik</a></p>
-								</div> -->
-								</div>
-								<!--Footer Column-->
-								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget gallery-widget">
-										<h4>Location</h4>
-										<div id="map" class="widget-content" style="width:250px;height:200px;">
-											<img src="images/resource/map250x200q50.jpg">
-										</div>
-										<p>2022-23&copy; All rights reserved,<br />Michael J Miller
-											Ltd</p>
-									</div>
-								</div>
-
-
-
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
+		<footer id="footer" class="main-footer style-two" style="margin-top: 96px;">
 		</footer>
+		<script src="/js/components/footer.js"></script>
+		<script>
+			var footer = document.getElementById("footer");
+			footer.innerHTML = insertFooter();
+		</script>
 	</div><!--End pagewrapper-->
 
 	<script src="js/jquery.js"></script>
@@ -565,8 +385,6 @@
 	<script src="js/wow.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/main.js"></script>
-
-	<!-- Google Maps API -->
 
 </body>
 
