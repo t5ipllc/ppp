@@ -18,7 +18,7 @@ function insertTopNavIndex() {
                 <li class="ppp_menuitem"><a href="/pages/ppp.html">PPP</a></li>
                 <li class="mtn_menuitem"><a href="/pages/mtn.html">MTN</a></li>
                 <li class="str_menuitem"><a href="/pages/strategy.html">The Strategy</a></li>
-                <li class="pro_menuitem"><a href="process">The Process</a></li>
+                <li class="pro_menuitem"><a href="/pages/process">The Process</a></li>
                 <li class="con_menuitem"><a href="/pages/contact.html">Contact Us</a></li>
             </ul>
         </div>
